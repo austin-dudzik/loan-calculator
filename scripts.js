@@ -58,14 +58,14 @@ $(document).ready(function() {
           $("#loanResult").html("<i class='fas fa-smile mb-3'></i><br> Loan approved!");
         }
 
-        // If months at job is under 1 year
+        // If months is equal or below 12 months
         else {
           $("#resultCard").css("background-color", "#dc3545");
           $("#loanResult").html("<i class='fas fa-frown mb-3'></i><br> Sorry, loan denied");
         }
 
       } else {
-        // If months is equal or below 12 months
+        // If credit score is below 600
         $("#resultCard").css("background-color", "#dc3545");
         $("#loanResult").html("<i class='fas fa-frown mb-3'></i><br> Sorry, loan denied");
       }
