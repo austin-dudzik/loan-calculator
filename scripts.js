@@ -52,7 +52,7 @@ $(document).ready(function() {
       // If credit score is equal or above 600
       if (credit >= 600) {
 
-        // If months at job is over 1 year
+        // If months is over 12 months
         if (months > 12) {
           $("#resultCard").css("background-color", "#28a745");
           $("#loanResult").html("<i class='fas fa-smile mb-3'></i><br> Loan approved!");
@@ -65,7 +65,7 @@ $(document).ready(function() {
         }
 
       } else {
-        // If credit score is below 600
+        // If months is equal or below 12 months
         $("#resultCard").css("background-color", "#dc3545");
         $("#loanResult").html("<i class='fas fa-frown mb-3'></i><br> Sorry, loan denied");
       }
