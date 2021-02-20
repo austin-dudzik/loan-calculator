@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Loan Calculator</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.14.0/css/all.css">
+</head>
+
+<body class="bg-primary">
+
+  <div class="container my-5 p-5 bg-light w-50">
+
+    <h3 class="font-weight-bold mb-5 text-primary text-center"><i class="fas fa-gem mr-2"></i> Diamond Lending Bank</h3>
+
+    <h2>Loan Calculator</h2>
+    <p class="mb-4">Welcome to Diamond's loan calculator! This calculator will let you know if you'll be approved or denied for a loan.</p>
+
+
+    <div class="row">
+      <div class="col-md-6">
+
+        <form>
+
+          <div class="form-group">
+            <label for="salary">What is your salary?</label>
+            <input type="number" name="salary" id="salary" class="form-control" placeholder="Enter salary here" min="0" max="10000000" required>
+          </div>
+
+          <div class="form-group">
+            <label for="credit">What is your credit score?</label>
+            <input type="number" name="credit" id="credit" class="form-control" placeholder="Enter credit score here" min="300" max="850" required>
+          </div>
+
+          <div class="form-group">
+            <label for="months">How many months at your job?</label>
+            <input type="number" name="months" id="months" class="form-control" placeholder="Enter months here" min="0" max="1000" required>
+          </div>
+
+          <button type="submit" name="submit" class="btn btn-dark btn-block btn-lg">Calculate</button>
+
+        </form>
+
+      </div>
+
+      <div class="col-md-6">
+
+        <div id="resultCard" class="card h-100 text-white text-center">
+          <div class="card-body">
+            <h5 class="mb-4">Loan Result</h5>
+            <h1 id="loanResult">?</h1>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="scripts.js"></script>
+
+</html>
